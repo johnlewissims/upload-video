@@ -1,6 +1,6 @@
 {
   "name": "ejin/upload-video",
-  "description": "Add video tags for fof uploader.",
+  "description": "Upload videos to Imgur in Flarum.",
   "keywords": [
     "flarum"
   ],
