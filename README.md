@@ -12,12 +12,15 @@ Use [Bazaar](https://discuss.flarum.org/d/5151-flagrow-bazaar-the-extension-mark
 composer require ejin/upload-video
 ```
 
+Navigate to 'Settings' and enter your [Client ID](https://api.imgur.com/oauth2/addclient) from Imgur, Imgur Endpoint (https://api.imgur.com/3/upload) and Max File Size in MB.
+
 ### Updating
 
 ```sh
 composer update ejin/upload-video
-```
+``` 
 
 ### Links
 
 - [Packagist](https://packagist.org/packages/ejin/upload-video)
+- [eJin Collective](https://ejincollective.com/)
