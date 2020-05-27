@@ -15,6 +15,7 @@ use Flarum\Extend;
 use Ejin\UploadVideo\Providers\VideoProvider;
 use Ejin\UploadVideo\Controllers\UploadVideoController;
 use Flarum\Api\Event\Serializing;
+use s9e\TextFormatter\Configurator;
 use Illuminate\Contracts\Events\Dispatcher;
 
 return [
@@ -28,4 +29,11 @@ return [
     function (Dispatcher $dispatcher) {
         $dispatcher->listen(Serializing::class, Listeners\SaveSettings::class);
     },
+    (new Extend\Formatter)
+    ->configure(function (Configurator $config) {
+        $config->BBCodes->addCustom(
+            '[IMGUR-VIDEO]{URL1}, {URL2}[/IMGUR-VIDEO]',
+            '<video class="imgurVideo" controls><source src="{URL1}" type="video/mp4"><img src="{URL2}"></video>'
+        );
+    })
 ];
