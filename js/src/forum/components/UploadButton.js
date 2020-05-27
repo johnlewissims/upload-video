@@ -90,10 +90,10 @@ export default class UploadButton extends Component {
   success(response) {
     let returned = JSON.parse(response)
     this.loading = false;
-    let url = returned.data.link;
+    let url = returned.data.link + '#t=0.1';
     let id = returned.data.id;
-    let preview = 'https://i.imgur.com/'+ id +'l.jpg';
-    let bbCode = '[IMGUR-VIDEO]'+ url +', '+ preview +'[/IMGUR-VIDEO]';
+    let preview = 'https://i.imgur.com/'+ id +'.jpg';
+    let bbCode = '[IMGUR-VIDEO]'+ url +'[/IMGUR-VIDEO]';
     this.props.textArea.insertAtCursor(bbCode);
   }
 

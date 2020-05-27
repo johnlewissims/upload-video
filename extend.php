@@ -32,8 +32,8 @@ return [
     (new Extend\Formatter)
     ->configure(function (Configurator $config) {
         $config->BBCodes->addCustom(
-            '[IMGUR-VIDEO]{URL1}, {URL2}[/IMGUR-VIDEO]',
-            '<video class="imgurVideo" controls><source src="{URL1}" type="video/mp4"><img src="{URL2}"></video>'
+            '[IMGUR-VIDEO]{URL1}[/IMGUR-VIDEO]',
+            '<video class="imgurVideo" controls><source src="{URL1}" type="video/mp4"></video>'
         );
     })
 ];
