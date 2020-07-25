@@ -92,8 +92,9 @@ export default class UploadButton extends Component {
     this.loading = false;
     let url = returned.data.link + '#t=0.1';
     let id = returned.data.id;
-    let preview = 'https://i.imgur.com/'+ id +'.jpg';
-    let bbCode = '[IMGUR-VIDEO]'+ url +'[/IMGUR-VIDEO]';
+    let proxyurl = url.replace("https://i.imgur.com/",app.forum.attribute('upload-video.imgur-viewpoint'));
+    let preview = app.forum.attribute('upload-video.imgur-viewpoint')+ id +'.jpg';
+    let bbCode = '[IMGUR-VIDEO]'+ proxyurl +'[/IMGUR-VIDEO]';
     this.props.textArea.insertAtCursor(bbCode);
   }
 

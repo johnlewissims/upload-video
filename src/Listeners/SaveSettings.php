@@ -19,6 +19,7 @@ class SaveSettings
     {
         if ($event->isSerializer(ForumSerializer::class)) {
             $event->attributes['upload-video.imgur-endpoint'] = $this->settings->get('upload-video.imgur-endpoint');
+            $event->attributes['upload-video.imgur-viewpoint'] = $this->settings->get('upload-video.imgur-viewpoint');
             $event->attributes['upload-video.client-id'] = $this->settings->get('upload-video.client-id');
             $event->attributes['upload-video.max-file-size'] = $this->settings->get('upload-video.max-file-size');
         }
