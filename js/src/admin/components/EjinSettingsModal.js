@@ -19,6 +19,10 @@ export default class EjinSettingsModal extends SettingsModal {
 				<label>Imgur Endpoint</label>
 				<input className="FormControl" bidi={this.setting('upload-video.imgur-endpoint')}/>
 			</div>,
+    <div className="Form-group">
+    <label>Imgur proxy URL</label>
+    <input className="FormControl"  bidi={this.setting('upload-video.imgur-viewpoint','https://i.imgur.com/')}/>
+    </div>,
       <div className="Form-group">
 				<label>Max File Size (MB)</label>
 				<input className="FormControl" bidi={this.setting('upload-video.max-file-size')}/>
