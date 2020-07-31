@@ -26,3 +26,7 @@ composer update ejin/upload-video
 
 - [Packagist](https://packagist.org/packages/ejin/upload-video)
 - [eJin Collective](https://ejincollective.com/)
+
+### Credits
+
+Special thanks to [LCinHK](https://github.com/LCinHK) for adding chinese language support.
