@@ -6,7 +6,7 @@ export default class EjinSettingsModal extends SettingsModal {
 	}
 
 	title() {
-		return 'Upload Video';
+		return app.translator.trans('upload-video.admin.settings.title');
 	}
 
 	form() {
@@ -16,15 +16,15 @@ export default class EjinSettingsModal extends SettingsModal {
 				<input className="FormControl" bidi={this.setting('upload-video.client-id')}/>
 			</div>,
       <div className="Form-group">
-				<label>Imgur Endpoint</label>
-				<input className="FormControl" bidi={this.setting('upload-video.imgur-endpoint')}/>
+				<label>{app.translator.trans('upload-video.admin.settings.imgur-endpoint')}</label>
+				<input className="FormControl" bidi={this.setting('upload-video.imgur-endpoint','https://api.imgur.com/3/upload')}/>
 			</div>,
     <div className="Form-group">
-    <label>Imgur proxy URL</label>
+    <label>{app.translator.trans('upload-video.admin.settings.proxy-URL')}</label>
     <input className="FormControl"  bidi={this.setting('upload-video.imgur-viewpoint','https://i.imgur.com/')}/>
     </div>,
       <div className="Form-group">
-				<label>Max File Size (MB)</label>
+				<label>{app.translator.trans('upload-video.admin.settings.file-size')}</label>
 				<input className="FormControl" bidi={this.setting('upload-video.max-file-size')}/>
 			</div>
 		];
