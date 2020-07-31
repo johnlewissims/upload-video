@@ -1,0 +1,7 @@
+upload-video:
+  admin:
+    settings:
+      title: Upload Video settings
+      imgur-endpoint: Imgur upload endpoint
+      proxy-URL: Imgur proxy URL(Change this to your proxy pass URL(the "https://i.imgur.com" part) if cannot access Imgur)
+      file-size: Max File Size (MB)

@@ -1,0 +1,7 @@
+upload-video:
+  admin:
+    settings:
+      title: Imgur上传设置
+      imgur-endpoint: Imgur 上传 API地址(如果你不能访问Imgur的话，换成自己的反代URL)
+      proxy-URL: Imgur 观看地址(换成自己的反代URL("https://i.imgur.com"这部分)如果你不能访问Imgur的话)
+      file-size: 最大文件大小(单位:MB)
